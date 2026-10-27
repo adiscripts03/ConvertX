@@ -176,11 +176,3 @@ Two properties are worth knowing about, because they catch whole classes of bug:
 
 Current state: 258 conversion pairs pass on Linux with every output validated,
 26 pass on an Android emulator, alongside the unit and integration suites.
-
-## Licensing
-
-The engine links **libx264** for H.264 encoding, which is **GPL**. That makes
-the app as a whole GPL. FFmpeg ships no H.264 encoder of its own, so the
-alternatives are to accept the licence, drop MP4/H.264 output for the MPEG-4
-Part 2 encoder, or use the device's hardware encoder through MediaCodec. The
-choice lives in one line of `engine/android/scripts/build_ffmpeg.sh`.
